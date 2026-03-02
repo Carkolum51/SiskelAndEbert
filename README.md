@@ -5,7 +5,7 @@ This project scrapes and reconciles episode lists of "Siskel & Ebert" (and relat
 ## Data Sources
 
 - **YouTube Channel**: [The Misadventures of Siskel & Ebert](https://www.youtube.com/@TheMisadventuresofSiskelEbert/videos)
-- **Website**: [Siskel & Ebert.org](https://siskelebert.org/)
+- **Website**: [Siskel & Ebert.org](https://siskelebert.org/) (Note: Site is currently down, but data is archived in `data/nombres_web.txt`)
 
 ## Project Structure
 
