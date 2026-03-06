@@ -9,7 +9,7 @@ update = input('Do you want to update the data files? (Y/n): ').strip().lower()
 if update in ('y', ''):
     print("🔄 Creating data files...")
     """ selector: 158, 157, 162, 7799""" 
-    #update_review_site_data() # The site is down by now, but the data was archived in data/archived_website_episodes.txt
+    #update_review_site_data()  The site is down by now, but the data was archived in data/archived_website_episodes.txt
     """ sneak-previews,
     at-the-movies-1982
     siskel-and-ebert-at-the-movies (this and next)
