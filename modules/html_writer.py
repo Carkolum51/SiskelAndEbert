@@ -58,7 +58,7 @@ def write_html(results, roeper=False):
         else:
             title_text = web_episode
         
-        display_title = f"{i} {title_text}"
+        display_title = title_text
         content = f"{display_title} → {video_match}" if match_type == "match" else display_title
         html_content += f'''
             <li id="{item_id}" class="{css_class}">
@@ -72,12 +72,8 @@ def write_html(results, roeper=False):
     </body>
     </html>
     """
-    
-    f =  open("semantic_matches.html", "w+", encoding="utf-8")
     filename = "roeper_matches.html" if roeper else "semantic_matches.html"
-    f =  open(filename, "w+", encoding="utf-8")
-    f.write(html_content)
-    f.seek(0)  #Resets the pointer
-    print("✅ File 'semantic_matches.html' generated with colors and checkboxes.")
+    with open(filename, "w", encoding="utf-8") as f:
+        f.write(html_content)
+
     print(f"✅ File '{filename}' generated with colors and checkboxes.")
-    return f
